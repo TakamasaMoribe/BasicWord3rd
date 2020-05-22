@@ -76,6 +76,9 @@ class ResultViewController: UIViewController {
         //正解率の取得
         var correctRate:String = "" //正解率
         correctRate = String(correctPercentLabel.text!)
+        if correctRate == "100.0%" {
+            correctRate = "100%" //2文字短縮
+        }
         
         //１回分の履歴文字列をつくり、改行を追加する
         nowResult = timeData + "    " + filename + "    " + correctRate + "\n" //改行
