@@ -22,7 +22,6 @@
 		7FEB0EC62477C10D0084DA59 /* １年生物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EC02477C10C0084DA59 /* １年生物.csv */; };
 		7FEB0EC92477C10D0084DA59 /* １年動物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EC32477C10D0084DA59 /* １年動物.csv */; };
 		7FEB0ECC2477C1940084DA59 /* １年物理.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0ECB2477C1940084DA59 /* １年物理.csv */; };
-		7FEB0ED02477C1CA0084DA59 /* １年植物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0ECF2477C1CA0084DA59 /* １年植物.csv */; };
 		7FEB0ED42477C2030084DA59 /* １年化学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0ED32477C2030084DA59 /* １年化学.csv */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		7FEB0EC02477C10C0084DA59 /* １年生物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年生物.csv"; sourceTree = "<group>"; };
 		7FEB0EC32477C10D0084DA59 /* １年動物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年動物.csv"; sourceTree = "<group>"; };
 		7FEB0ECB2477C1940084DA59 /* １年物理.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年物理.csv"; sourceTree = "<group>"; };
-		7FEB0ECF2477C1CA0084DA59 /* １年植物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年植物.csv"; sourceTree = "<group>"; };
 		7FEB0ED32477C2030084DA59 /* １年化学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年化学.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,6 @@
 				7FE84D5E2476662A00B2C798 /* Singleton.swift */,
 				7FE84D4B2476630F00B2C798 /* Assets.xcassets */,
 				7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */,
-				7FEB0ECF2477C1CA0084DA59 /* １年植物.csv */,
 				7FEB0ED32477C2030084DA59 /* １年化学.csv */,
 				7FEB0EC02477C10C0084DA59 /* １年生物.csv */,
 				7FEB0EBF2477C10C0084DA59 /* １年地学.csv */,
@@ -167,7 +164,6 @@
 				7FEB0ECC2477C1940084DA59 /* １年物理.csv in Resources */,
 				7FEB0ED42477C2030084DA59 /* １年化学.csv in Resources */,
 				7FEB0EC92477C10D0084DA59 /* １年動物.csv in Resources */,
-				7FEB0ED02477C1CA0084DA59 /* １年植物.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
