@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Y0-RP-txa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Y0-RP-txa">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -60,6 +60,9 @@
                                 <rect key="frame" x="157" y="507" width="72" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="START"/>
+                                <connections>
+                                    <segue destination="dxg-ze-yre" kind="show" id="95Q-TK-3eF"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k74-GQ-KpR">
                                 <rect key="frame" x="116" y="579" width="143" height="36"/>
@@ -108,7 +111,7 @@
             <objects>
                 <viewController storyboardIdentifier="question" id="dxg-ze-yre" customClass="QuestionViewController" customModule="BasicWord3rd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="igS-2N-J1d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yM-BK-CAI">
@@ -129,7 +132,7 @@
                                 <rect key="frame" x="63" y="61" width="254" height="2"/>
                             </progressView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="問題文です。当てはまる言葉を下の４つの中から選んで、クリックしてください。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="93S-ae-hPD">
-                                <rect key="frame" x="16" y="71" width="343" height="136"/>
+                                <rect key="frame" x="16" y="71" width="343" height="116"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -142,7 +145,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJP-r6-jcx">
-                                <rect key="frame" x="35" y="575" width="82" height="36"/>
+                                <rect key="frame" x="35" y="555" width="82" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="中断する"/>
                                 <connections>
@@ -150,7 +153,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sat-UE-pir">
-                                <rect key="frame" x="141.5" y="308" width="92" height="225"/>
+                                <rect key="frame" x="141.5" y="288" width="92" height="225"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8i-2M-DVW">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="41.5"/>
@@ -190,13 +193,13 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="dln-OU-pPS">
-                                <rect key="frame" x="87" y="323" width="201" height="195"/>
+                                <rect key="frame" x="87" y="303" width="201" height="195"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="195" id="Ttd-0D-V15"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="WGZ-vW-cOl">
-                                <rect key="frame" x="87" y="390" width="201" height="128"/>
+                                <rect key="frame" x="87" y="370" width="201" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

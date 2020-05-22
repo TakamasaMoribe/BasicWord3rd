@@ -17,6 +17,13 @@
 		7FE84D5B247665BF00B2C798 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D5A247665BF00B2C798 /* QuestionViewController.swift */; };
 		7FE84D5D247665F200B2C798 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D5C247665F200B2C798 /* ResultViewController.swift */; };
 		7FE84D5F2476662A00B2C798 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D5E2476662A00B2C798 /* Singleton.swift */; };
+		7FEB0EBE2477C0E10084DA59 /* 顕微鏡.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */; };
+		7FEB0EC52477C10D0084DA59 /* １年地学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EBF2477C10C0084DA59 /* １年地学.csv */; };
+		7FEB0EC62477C10D0084DA59 /* １年生物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EC02477C10C0084DA59 /* １年生物.csv */; };
+		7FEB0EC92477C10D0084DA59 /* １年動物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EC32477C10D0084DA59 /* １年動物.csv */; };
+		7FEB0ECC2477C1940084DA59 /* １年物理.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0ECB2477C1940084DA59 /* １年物理.csv */; };
+		7FEB0ED02477C1CA0084DA59 /* １年植物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0ECF2477C1CA0084DA59 /* １年植物.csv */; };
+		7FEB0ED42477C2030084DA59 /* １年化学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0ED32477C2030084DA59 /* １年化学.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		7FE84D5A247665BF00B2C798 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		7FE84D5C247665F200B2C798 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7FE84D5E2476662A00B2C798 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "顕微鏡.png"; sourceTree = "<group>"; };
+		7FEB0EBF2477C10C0084DA59 /* １年地学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年地学.csv"; sourceTree = "<group>"; };
+		7FEB0EC02477C10C0084DA59 /* １年生物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年生物.csv"; sourceTree = "<group>"; };
+		7FEB0EC32477C10D0084DA59 /* １年動物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年動物.csv"; sourceTree = "<group>"; };
+		7FEB0ECB2477C1940084DA59 /* １年物理.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年物理.csv"; sourceTree = "<group>"; };
+		7FEB0ECF2477C1CA0084DA59 /* １年植物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年植物.csv"; sourceTree = "<group>"; };
+		7FEB0ED32477C2030084DA59 /* １年化学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年化学.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,13 @@
 				7FE84D5C247665F200B2C798 /* ResultViewController.swift */,
 				7FE84D5E2476662A00B2C798 /* Singleton.swift */,
 				7FE84D4B2476630F00B2C798 /* Assets.xcassets */,
+				7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */,
+				7FEB0ECF2477C1CA0084DA59 /* １年植物.csv */,
+				7FEB0ED32477C2030084DA59 /* １年化学.csv */,
+				7FEB0EC02477C10C0084DA59 /* １年生物.csv */,
+				7FEB0EBF2477C10C0084DA59 /* １年地学.csv */,
+				7FEB0EC32477C10D0084DA59 /* １年動物.csv */,
+				7FEB0ECB2477C1940084DA59 /* １年物理.csv */,
 				7FE84D4D2476630F00B2C798 /* LaunchScreen.storyboard */,
 				7FE84D502476630F00B2C798 /* Info.plist */,
 			);
@@ -139,7 +160,14 @@
 			files = (
 				7FE84D4F2476630F00B2C798 /* LaunchScreen.storyboard in Resources */,
 				7FE84D4C2476630F00B2C798 /* Assets.xcassets in Resources */,
+				7FEB0EC52477C10D0084DA59 /* １年地学.csv in Resources */,
+				7FEB0EBE2477C0E10084DA59 /* 顕微鏡.png in Resources */,
 				7FE84D4A2476630E00B2C798 /* Main.storyboard in Resources */,
+				7FEB0EC62477C10D0084DA59 /* １年生物.csv in Resources */,
+				7FEB0ECC2477C1940084DA59 /* １年物理.csv in Resources */,
+				7FEB0ED42477C2030084DA59 /* １年化学.csv in Resources */,
+				7FEB0EC92477C10D0084DA59 /* １年動物.csv in Resources */,
+				7FEB0ED02477C1CA0084DA59 /* １年植物.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
