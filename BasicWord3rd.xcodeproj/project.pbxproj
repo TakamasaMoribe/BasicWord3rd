@@ -10,6 +10,7 @@
 		7F3BAAD12477F2EC002BB4A2 /* correct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BAAD02477F2EC002BB4A2 /* correct@2x.png */; };
 		7F3BAAD32477F2F1002BB4A2 /* incorrect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BAAD22477F2F1002BB4A2 /* incorrect@2x.png */; };
 		7F3BAAD72477FAB9002BB4A2 /* １年顕微鏡.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BAAD62477FAB9002BB4A2 /* １年顕微鏡.csv */; };
+		7F5DCBB3247A38F2004FE808 /* 顕微鏡.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5DCBB2247A38F2004FE808 /* 顕微鏡.png */; };
 		7FE84D432476630E00B2C798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D422476630E00B2C798 /* AppDelegate.swift */; };
 		7FE84D452476630E00B2C798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D442476630E00B2C798 /* SceneDelegate.swift */; };
 		7FE84D4A2476630E00B2C798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE84D482476630E00B2C798 /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		7FE84D5B247665BF00B2C798 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D5A247665BF00B2C798 /* QuestionViewController.swift */; };
 		7FE84D5D247665F200B2C798 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D5C247665F200B2C798 /* ResultViewController.swift */; };
 		7FE84D5F2476662A00B2C798 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D5E2476662A00B2C798 /* Singleton.swift */; };
-		7FEB0EBE2477C0E10084DA59 /* 顕微鏡.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */; };
 		7FEB0EC52477C10D0084DA59 /* １年地学.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EBF2477C10C0084DA59 /* １年地学.csv */; };
 		7FEB0EC62477C10D0084DA59 /* １年生物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EC02477C10C0084DA59 /* １年生物.csv */; };
 		7FEB0EC92477C10D0084DA59 /* １年動物.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB0EC32477C10D0084DA59 /* １年動物.csv */; };
@@ -32,6 +32,7 @@
 		7F3BAAD02477F2EC002BB4A2 /* correct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "correct@2x.png"; sourceTree = "<group>"; };
 		7F3BAAD22477F2F1002BB4A2 /* incorrect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "incorrect@2x.png"; sourceTree = "<group>"; };
 		7F3BAAD62477FAB9002BB4A2 /* １年顕微鏡.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年顕微鏡.csv"; sourceTree = "<group>"; };
+		7F5DCBB2247A38F2004FE808 /* 顕微鏡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "顕微鏡.png"; sourceTree = "<group>"; };
 		7FE84D3F2476630E00B2C798 /* BasicWord3rd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicWord3rd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE84D422476630E00B2C798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE84D442476630E00B2C798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		7FE84D5A247665BF00B2C798 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		7FE84D5C247665F200B2C798 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7FE84D5E2476662A00B2C798 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "顕微鏡.png"; sourceTree = "<group>"; };
 		7FEB0EBF2477C10C0084DA59 /* １年地学.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年地学.csv"; sourceTree = "<group>"; };
 		7FEB0EC02477C10C0084DA59 /* １年生物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年生物.csv"; sourceTree = "<group>"; };
 		7FEB0EC32477C10D0084DA59 /* １年動物.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年動物.csv"; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				7FE84D5C247665F200B2C798 /* ResultViewController.swift */,
 				7FE84D5E2476662A00B2C798 /* Singleton.swift */,
 				7FE84D4B2476630F00B2C798 /* Assets.xcassets */,
-				7FEB0EBD2477C0E10084DA59 /* 顕微鏡.png */,
+				7F5DCBB2247A38F2004FE808 /* 顕微鏡.png */,
 				7F3BAAD02477F2EC002BB4A2 /* correct@2x.png */,
 				7F3BAAD22477F2F1002BB4A2 /* incorrect@2x.png */,
 				7F3BAAD62477FAB9002BB4A2 /* １年顕微鏡.csv */,
@@ -167,10 +167,10 @@
 				7FE84D4F2476630F00B2C798 /* LaunchScreen.storyboard in Resources */,
 				7FE84D4C2476630F00B2C798 /* Assets.xcassets in Resources */,
 				7FEB0EC52477C10D0084DA59 /* １年地学.csv in Resources */,
-				7FEB0EBE2477C0E10084DA59 /* 顕微鏡.png in Resources */,
 				7FE84D4A2476630E00B2C798 /* Main.storyboard in Resources */,
 				7FEB0EC62477C10D0084DA59 /* １年生物.csv in Resources */,
 				7F3BAAD32477F2F1002BB4A2 /* incorrect@2x.png in Resources */,
+				7F5DCBB3247A38F2004FE808 /* 顕微鏡.png in Resources */,
 				7FEB0ECC2477C1940084DA59 /* １年物理.csv in Resources */,
 				7F3BAAD72477FAB9002BB4A2 /* １年顕微鏡.csv in Resources */,
 				7FEB0ED42477C2030084DA59 /* １年化学.csv in Resources */,

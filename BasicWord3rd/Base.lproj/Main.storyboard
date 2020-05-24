@@ -195,8 +195,8 @@
                                     <constraint firstAttribute="bottom" secondItem="LfF-gs-JFd" secondAttribute="bottom" id="XVj-t2-n7E"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="顕微鏡.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAa-aG-qbe">
-                                <rect key="frame" x="0.0" y="120" width="375" height="277"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="顕微鏡.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAa-aG-qbe">
+                                <rect key="frame" x="0.0" y="118" width="375" height="279"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-54-Lhm">
                                 <rect key="frame" x="250" y="423" width="95" height="34"/>
@@ -225,11 +225,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="IAa-aG-qbe" firstAttribute="top" secondItem="93S-ae-hPD" secondAttribute="bottom" constant="15" id="2KR-B9-Z98"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="3aS-54-Lhm" secondAttribute="trailing" constant="30" id="2ey-i9-b4u"/>
-                            <constraint firstItem="IAa-aG-qbe" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="120" id="4hB-T1-5aS"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="3aS-54-Lhm" secondAttribute="bottom" constant="190" id="57V-yt-pPp"/>
                             <constraint firstItem="93S-ae-hPD" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="67" id="5cs-4J-bzD"/>
-                            <constraint firstItem="IAa-aG-qbe" firstAttribute="trailing" secondItem="xH5-9H-dKj" secondAttribute="trailing" id="7Xt-0X-wud"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="93S-ae-hPD" secondAttribute="trailing" constant="30" id="AP3-hs-yOz"/>
                             <constraint firstItem="4ae-dV-aLn" firstAttribute="leading" secondItem="igS-2N-J1d" secondAttribute="leading" constant="60" id="CWV-PE-hCZ"/>
                             <constraint firstItem="4ae-dV-aLn" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="60" id="Esg-vq-Tm3"/>
@@ -237,13 +236,16 @@
                             <constraint firstItem="6yM-BK-CAI" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="50" id="IB9-mN-PxZ"/>
                             <constraint firstAttribute="trailing" secondItem="4ae-dV-aLn" secondAttribute="trailing" constant="60" id="JuD-Kx-Iwi"/>
                             <constraint firstItem="sA8-Ka-HAg" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="20" id="MB1-ff-eI7"/>
-                            <constraint firstItem="IAa-aG-qbe" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" id="MvU-qN-m9P"/>
                             <constraint firstItem="7hE-uM-1ij" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="OIC-XD-VsK"/>
+                            <constraint firstItem="IAa-aG-qbe" firstAttribute="leading" secondItem="igS-2N-J1d" secondAttribute="leading" id="RkO-eI-xc2"/>
                             <constraint firstItem="93S-ae-hPD" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="SkA-0t-RKl"/>
                             <constraint firstItem="6yM-BK-CAI" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="30" id="Wow-za-cB0"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="7hE-uM-1ij" secondAttribute="bottom" constant="200" id="Ydl-NF-dBO"/>
+                            <constraint firstItem="3aS-54-Lhm" firstAttribute="top" secondItem="IAa-aG-qbe" secondAttribute="bottom" constant="26" id="azh-tu-YjR"/>
+                            <constraint firstItem="7hE-uM-1ij" firstAttribute="top" secondItem="IAa-aG-qbe" secondAttribute="bottom" constant="26" id="cgB-HA-mrY"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="sA8-Ka-HAg" secondAttribute="trailing" constant="20" id="fjh-hO-y8r"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="6yM-BK-CAI" secondAttribute="trailing" constant="200" id="kHO-DG-GS9"/>
+                            <constraint firstItem="IAa-aG-qbe" firstAttribute="centerX" secondItem="93S-ae-hPD" secondAttribute="centerX" id="lgG-0n-rat"/>
                             <constraint firstItem="3aS-54-Lhm" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="250" id="srN-aC-BgB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xH5-9H-dKj"/>
@@ -287,7 +289,7 @@
                                     <segue destination="f9z-62-HFN" kind="unwind" unwindAction="goToTitle:" id="d8e-2Y-LNQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="5" maximumZoomScale="5" text="成績履歴の表示                           （日付時刻　ファイル名　正解率）" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Vm-fR-AV0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="5" maximumZoomScale="5" editable="NO" text="成績履歴の表示                           （日付時刻　ファイル名　正解率）" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vm-fR-AV0">
                                 <rect key="frame" x="32" y="237" width="315" height="281"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
