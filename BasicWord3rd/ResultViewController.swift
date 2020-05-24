@@ -53,6 +53,7 @@ class ResultViewController: UIViewController {
         formatter.timeStyle = .short    //短い表記
         formatter.locale = Locale(identifier: "ja_JP")//日本式
         let now = Date()          //現在の日時を取得
+        //"2020/05/25 20:48"
         var timeData:String = ""
         timeData = String(formatter.string(from:now))
             var timeStr:String   //時刻を取り出す文字列
@@ -81,7 +82,7 @@ class ResultViewController: UIViewController {
         }
         
         //１回分の履歴文字列をつくり、改行を追加する
-        nowResult = timeData + "    " + filename + "    " + correctRate + "\n" //改行
+        nowResult = timeData + " " + filename + " " + correctRate + "\n" //改行
                 // "05/19 12:00   １年生物   100%" 11+3+8+3+4 = 29
         
         //過去の履歴をファイルから読み込んで、今回の履歴に追加してから保存する。
