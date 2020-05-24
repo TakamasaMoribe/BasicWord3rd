@@ -46,6 +46,8 @@ class QuestionViewController: UIViewController {
         
     override func viewDidLoad() {
             super.viewDidLoad()
+        //イメージビューに表示する画像の選択
+        //生物の時：顕微鏡、花のつくり、植物分類、動物分類
         
         //テキストビューの装飾
         let view = questionTextView! //UIView()

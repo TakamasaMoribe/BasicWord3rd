@@ -16,6 +16,8 @@ class StartViewController: UIViewController {
 
     @IBOutlet weak var gradeSegment: UISegmentedControl! //学年名
     @IBOutlet weak var unitSegment: UISegmentedControl!  //単元名
+    @IBOutlet weak var varietySegment: UISegmentedControl!//種類名（問題の種類）
+    
     @IBOutlet weak var retryButton: UIButton!            //「中断からの再開」ボタン
 
     
@@ -39,19 +41,26 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //セグメンティッドコントロールの装飾
-        let font1 = UIFont.systemFont(ofSize: 20)//学年選択
+        let font1 = UIFont.systemFont(ofSize: 20)//学年選択　grade
         gradeSegment.setTitleTextAttributes([NSAttributedString.Key.font: font1], for: .normal)
         // セグメントの背景色の設定
         gradeSegment.backgroundColor = UIColor(red: 0.00, green: 1.00, blue: 0.00, alpha: 0.2)
         // 選択されたセグメントの背景色の設定
         gradeSegment.selectedSegmentTintColor = UIColor(red: 1.00, green: 1.00, blue: 0.00, alpha: 1.0)
         
-        let font2 = UIFont.systemFont(ofSize: 18)//分野選択
+        let font2 = UIFont.systemFont(ofSize: 18)//分野選択 unit
         unitSegment.setTitleTextAttributes([NSAttributedString.Key.font: font2], for: .normal)
         // セグメントの背景色の設定
         unitSegment.backgroundColor = UIColor(red: 0.00, green: 1.00, blue: 0.00, alpha: 0.2)
         // 選択されたセグメントの背景色の設定
         unitSegment.selectedSegmentTintColor = UIColor(red: 1.00, green: 1.00, blue: 0.00, alpha: 1.0)
+        
+        let font3 = UIFont.systemFont(ofSize: 18)//種類選択 variety
+        varietySegment.setTitleTextAttributes([NSAttributedString.Key.font: font3], for: .normal)
+        // セグメントの背景色の設定
+        varietySegment.backgroundColor = UIColor(red: 0.00, green: 1.00, blue: 0.00, alpha: 0.2)
+        // 選択されたセグメントの背景色の設定
+        varietySegment.selectedSegmentTintColor = UIColor(red: 1.00, green: 1.00, blue: 0.00, alpha: 1.0)
         
     }
     // end of  override func viewDidLoad()  -------------------------------------------------
@@ -61,6 +70,7 @@ class StartViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //セグメンティッドコントロールから問題ファイル名を取得する
+        //Grade:学年、Unit:単元、Variety:種類
         var filename:String //ファイル名（拡張子を除いた本体のみ）
         //選択されているセグメントのインデックス（学年名）
         let selectedGradeIndex = gradeSegment.selectedSegmentIndex
@@ -70,8 +80,12 @@ class StartViewController: UIViewController {
         let selectedUnitIndex = unitSegment.selectedSegmentIndex
         //（単元名）
         let text2 = unitSegment.titleForSegment(at: selectedUnitIndex)
+        //（種類名）
+        let selectedVarietyIndex = varietySegment.selectedSegmentIndex
+        //（種類名）
+        let text3 = varietySegment.titleForSegment(at: selectedVarietyIndex)
         //ファイル名の生成　学年名＋単元名
-        filename = text1! + text2!
+        filename = text1! + text2! + text3!
         singleton.saveItem(item: filename) //ファイル名を　シングルトンへ保存　読み込みで使用
             
         //問題文の読み込み  sharedInstance.loadQuestion() ****
