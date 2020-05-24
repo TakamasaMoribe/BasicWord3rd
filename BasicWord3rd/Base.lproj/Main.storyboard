@@ -21,7 +21,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分野" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-aM-RFe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-aM-RFe">
                                 <rect key="frame" x="163" y="319" width="49" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -33,21 +33,22 @@
                                     <constraint firstAttribute="height" constant="31" id="wbx-T2-w9A"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="１年"/>
-                                    <segment title="２年"/>
-                                    <segment title="３年"/>
+                                    <segment title="生物"/>
+                                    <segment title="地学"/>
+                                    <segment title="化学"/>
+                                    <segment title="物理"/>
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-qY-nfR">
                                 <rect key="frame" x="50" y="368" width="275" height="32"/>
                                 <segments>
                                     <segment title="顕微鏡"/>
-                                    <segment title="地学"/>
-                                    <segment title="化学"/>
-                                    <segment title="物理"/>
+                                    <segment title="花のつくり"/>
+                                    <segment title="植物分類"/>
+                                    <segment title="動物分類"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-Xo-MgT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分野" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-Xo-MgT">
                                 <rect key="frame" x="163" y="150" width="49" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="o7s-qj-zw6"/>
