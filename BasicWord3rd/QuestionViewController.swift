@@ -114,7 +114,7 @@ class QuestionViewController: UIViewController {
     //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝
     private func initImageView(){
          // UIImage インスタンスの生成
-         let questionPicture:UIImage = UIImage(named:"顕微鏡")!
+         let questionPicture:UIImage = UIImage(named:"花の構造")!
          
          // UIImageView 初期化
          let imageView = UIImageView(image:questionPicture)
@@ -128,17 +128,20 @@ class QuestionViewController: UIViewController {
          let imgHeight:CGFloat = questionPicture.size.height
 
          // 画像サイズをスクリーン幅に合わせる
-         let scale:CGFloat = screenWidth / imgWidth
+         var scale:CGFloat = screenWidth / imgWidth
+        scale = scale * 0.8 //０.８倍にしてみる　大きさはこんなものかな
+        
          let rect:CGRect =
              CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
 
          // ImageView frame をCGRectで作った矩形に合わせる
          imageView.frame = rect;
 
-         // 画像の中心を画面の中心に設定
-         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
-         
-         // UIImageViewのインスタンスをビューに追加
+         // 画像の中心を画面の中心に設定　　位置の指定をここでやっている
+         //imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
+         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2 - 80)//少し上に
+        
+         // UIImageViewのインスタンスをビューに追加して表示する
          self.view.addSubview(imageView)
          
      }
