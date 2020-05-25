@@ -242,9 +242,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="顕微鏡.png" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-U2-Wge">
-                                <rect key="frame" x="0.0" y="111" width="375" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-U2-Wge">
+                                <rect key="frame" x="0.0" y="113" width="375" height="301"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -252,6 +251,7 @@
                             <constraint firstItem="7hE-uM-1ij" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="2G3-TQ-Yj9"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="sA8-Ka-HAg" secondAttribute="trailing" constant="20" id="2aA-xo-M9E"/>
                             <constraint firstItem="93S-ae-hPD" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="67" id="5cs-4J-bzD"/>
+                            <constraint firstItem="3aS-54-Lhm" firstAttribute="top" secondItem="zwT-U2-Wge" secondAttribute="bottom" constant="35" id="ANM-zG-hjJ"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="93S-ae-hPD" secondAttribute="trailing" constant="30" id="AP3-hs-yOz"/>
                             <constraint firstItem="4ae-dV-aLn" firstAttribute="leading" secondItem="igS-2N-J1d" secondAttribute="leading" constant="60" id="CWV-PE-hCZ"/>
                             <constraint firstItem="4ae-dV-aLn" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="60" id="Esg-vq-Tm3"/>
@@ -260,6 +260,7 @@
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="3aS-54-Lhm" secondAttribute="trailing" constant="20" id="J8E-97-Jus"/>
                             <constraint firstAttribute="trailing" secondItem="4ae-dV-aLn" secondAttribute="trailing" constant="60" id="JuD-Kx-Iwi"/>
                             <constraint firstItem="WGZ-vW-cOl" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="450" id="Jzp-uq-ypn"/>
+                            <constraint firstItem="zwT-U2-Wge" firstAttribute="top" secondItem="93S-ae-hPD" secondAttribute="bottom" constant="10" id="Mw2-SK-11b"/>
                             <constraint firstItem="HJP-r6-jcx" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="NdA-kY-Yf5"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="HJP-r6-jcx" secondAttribute="bottom" constant="20" id="PzL-1c-1b7"/>
                             <constraint firstItem="sA8-Ka-HAg" firstAttribute="top" secondItem="7hE-uM-1ij" secondAttribute="bottom" constant="15" id="RHf-vG-rTO"/>
@@ -268,11 +269,13 @@
                             <constraint firstItem="6yM-BK-CAI" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="30" id="Wow-za-cB0"/>
                             <constraint firstItem="dln-OU-pPS" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="125" id="Ybo-PH-BgZ"/>
                             <constraint firstItem="dln-OU-pPS" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="450" id="Yzj-0j-oIO"/>
+                            <constraint firstItem="zwT-U2-Wge" firstAttribute="trailing" secondItem="xH5-9H-dKj" secondAttribute="trailing" id="aPe-gd-WTA"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="WGZ-vW-cOl" secondAttribute="trailing" constant="125" id="bs8-u2-l9Z"/>
                             <constraint firstItem="WGZ-vW-cOl" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="125" id="fdO-3P-Gwj"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="dln-OU-pPS" secondAttribute="trailing" constant="125" id="fnE-Al-e8K"/>
                             <constraint firstItem="sA8-Ka-HAg" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="20" id="hD0-Ao-SdF"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="6yM-BK-CAI" secondAttribute="trailing" constant="200" id="kHO-DG-GS9"/>
+                            <constraint firstItem="zwT-U2-Wge" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" id="pTS-DN-iHc"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HJP-r6-jcx" secondAttribute="trailing" symbolic="YES" id="x1w-9b-PcN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xH5-9H-dKj"/>
@@ -292,6 +295,7 @@
                         <outlet property="nextQuestionButton" destination="3aS-54-Lhm" id="FfH-2v-LpR"/>
                         <outlet property="progressView" destination="4ae-dV-aLn" id="Hdb-MK-FrP"/>
                         <outlet property="questionNoLabel" destination="6yM-BK-CAI" id="4sk-Uf-NBf"/>
+                        <outlet property="questionPicture" destination="zwT-U2-Wge" id="Btg-ca-0xh"/>
                         <outlet property="questionTextView" destination="93S-ae-hPD" id="w5A-Zd-RA2"/>
                         <outlet property="trueAnswer" destination="7hE-uM-1ij" id="m1U-H2-S7G"/>
                     </connections>
@@ -386,6 +390,5 @@
     <resources>
         <image name="correct" width="128" height="128"/>
         <image name="incorrect" width="128" height="128"/>
-        <image name="顕微鏡.png" width="147" height="166.5"/>
     </resources>
 </document>

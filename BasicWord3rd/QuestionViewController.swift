@@ -11,16 +11,22 @@ import UIKit
 import AudioToolbox
 
 class QuestionViewController: UIViewController {
-    
+
     let singleton:Singleton = Singleton.sharedInstance
         
     var filename:String = ""       //問題データのCSVファイル名本体部分
+    var pictureName:UIImage = UIImage(named:"顕微鏡")!
+    
     var questionData:QuestionData! //前画面より受け取るデータ
     var totalNumberOfQuestions:Int = 0      //問題の総数
 
     var correctCount:Int = 0  //正解数
     var nowQuestionNo:Int = 1 //現在出題している問題の番号・・前画面より引き継ぐ？？？？？？？？
     var questionNo:Int = 1 //現在出題している問題の番号・・前画面より引き継ぐ？？？？？？？？
+    
+    
+    @IBOutlet weak var questionPicture: UIImageView!//問題用の図
+    
         
     @IBOutlet weak var progressView: UIProgressView! //解答の進行状況
         
@@ -48,6 +54,7 @@ class QuestionViewController: UIViewController {
             super.viewDidLoad()
         //イメージビューに表示する画像の選択
         //生物の時：顕微鏡、花のつくり、植物分類、動物分類
+        initImageView()//imageViewの初期化
         
         //テキストビューの装飾
         let view = questionTextView! //UIView()
@@ -102,7 +109,39 @@ class QuestionViewController: UIViewController {
             
     }
     // end of override func viewDidLoad() ------------------------------------------------
-
+    
+    
+    //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝
+    private func initImageView(){
+         // UIImage インスタンスの生成
+         let questionPicture:UIImage = UIImage(named:"花の構造")!
+         
+         // UIImageView 初期化
+         let imageView = UIImageView(image:questionPicture)
+         
+//         // スクリーンの縦横サイズを取得
+//         let screenWidth:CGFloat = view.frame.size.width
+//         let screenHeight:CGFloat = view.frame.size.height
+//
+//         // 画像の縦横サイズを取得
+//         let imgWidth:CGFloat = image1.size.width
+//         let imgHeight:CGFloat = image1.size.height
+//
+//         // 画像サイズをスクリーン幅に合わせる
+//         let scale:CGFloat = screenWidth / imgWidth
+//         let rect:CGRect =
+//             CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
+//
+//         // ImageView frame をCGRectで作った矩形に合わせる
+//         imageView.frame = rect;
+//
+//         // 画像の中心を画面の中心に設定
+//         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
+         
+         // UIImageViewのインスタンスをビューに追加
+         self.view.addSubview(imageView)
+         
+     }
     
 //ボタンの装飾
     func designButton(buttonObj:UIButton)  {
