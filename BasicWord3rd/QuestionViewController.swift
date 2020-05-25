@@ -114,29 +114,29 @@ class QuestionViewController: UIViewController {
     //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝
     private func initImageView(){
          // UIImage インスタンスの生成
-         let questionPicture:UIImage = UIImage(named:"花の構造")!
+         let questionPicture:UIImage = UIImage(named:"顕微鏡")!
          
          // UIImageView 初期化
          let imageView = UIImageView(image:questionPicture)
          
-//         // スクリーンの縦横サイズを取得
-//         let screenWidth:CGFloat = view.frame.size.width
-//         let screenHeight:CGFloat = view.frame.size.height
-//
-//         // 画像の縦横サイズを取得
-//         let imgWidth:CGFloat = image1.size.width
-//         let imgHeight:CGFloat = image1.size.height
-//
-//         // 画像サイズをスクリーン幅に合わせる
-//         let scale:CGFloat = screenWidth / imgWidth
-//         let rect:CGRect =
-//             CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
-//
-//         // ImageView frame をCGRectで作った矩形に合わせる
-//         imageView.frame = rect;
-//
-//         // 画像の中心を画面の中心に設定
-//         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
+         // スクリーンの縦横サイズを取得
+         let screenWidth:CGFloat = view.frame.size.width
+         let screenHeight:CGFloat = view.frame.size.height
+
+         // 画像の縦横サイズを取得
+         let imgWidth:CGFloat = questionPicture.size.width
+         let imgHeight:CGFloat = questionPicture.size.height
+
+         // 画像サイズをスクリーン幅に合わせる
+         let scale:CGFloat = screenWidth / imgWidth
+         let rect:CGRect =
+             CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
+
+         // ImageView frame をCGRectで作った矩形に合わせる
+         imageView.frame = rect;
+
+         // 画像の中心を画面の中心に設定
+         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
          
          // UIImageViewのインスタンスをビューに追加
          self.view.addSubview(imageView)
