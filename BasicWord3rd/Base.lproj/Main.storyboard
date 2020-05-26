@@ -228,8 +228,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-U2-Wge">
-                                <rect key="frame" x="0.0" y="113" width="375" height="301"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-U2-Wge">
+                                <rect key="frame" x="0.0" y="226" width="234" height="188"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-54-Lhm">
                                 <rect key="frame" x="309" y="457" width="50" height="36"/>
@@ -290,8 +290,8 @@
                         <outlet property="incorrectImageView" destination="dln-OU-pPS" id="O5v-WH-jhm"/>
                         <outlet property="nextQuestionButton" destination="3aS-54-Lhm" id="FfH-2v-LpR"/>
                         <outlet property="progressView" destination="4ae-dV-aLn" id="Hdb-MK-FrP"/>
+                        <outlet property="questionImageView" destination="zwT-U2-Wge" id="v0M-3b-iyD"/>
                         <outlet property="questionNoLabel" destination="6yM-BK-CAI" id="4sk-Uf-NBf"/>
-                        <outlet property="questionPicture" destination="zwT-U2-Wge" id="Btg-ca-0xh"/>
                         <outlet property="questionTextView" destination="93S-ae-hPD" id="w5A-Zd-RA2"/>
                         <outlet property="trueAnswer" destination="7hE-uM-1ij" id="m1U-H2-S7G"/>
                     </connections>

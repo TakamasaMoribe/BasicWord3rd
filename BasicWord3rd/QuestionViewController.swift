@@ -20,7 +20,7 @@ class QuestionViewController: UIViewController {
     var questionNo:Int = 1 //現在出題している問題の番号・・前画面より引き継ぐ？？？？？？？？
     
     
-    @IBOutlet weak var questionPicture: UIImageView!//問題用の図
+    @IBOutlet weak var questionImageView: UIImageView!//問題用の図
         
     @IBOutlet weak var progressView: UIProgressView! //解答の進行状況
         
@@ -110,38 +110,40 @@ class QuestionViewController: UIViewController {
         
         //ファイル名の取得・・・ファイル名が問題の種類を表している
         let singleton:Singleton = Singleton.sharedInstance
-        let filename = singleton.getItem() //ファイル名を読み込む
-        
+        let filename = singleton.getItem() //ファイル名を読み込む        
         // UIImage インスタンスの生成
-        let questionPicture:UIImage = UIImage(named:filename)!//スタート画面で選択した問題
-         
+        let rect = CGRect(x: 0, y: 0, width: 0, height: 0)//値は初期値
+        let imageView = UIImageView(frame:rect)   //長方形の画像
+        imageView.image = UIImage(named:filename)!//スタート画面で選択した問題の画像
          // UIImageView 初期化
-         let imageView = UIImageView(image:questionPicture)
-         
+//         let imageView = UIImageView(image:imageView)
+        questionImageView.image = imageView.image//?????????
          // スクリーンの縦横サイズを取得
-         let screenWidth:CGFloat = view.frame.size.width
-         let screenHeight:CGFloat = view.frame.size.height
-
-         // 画像の縦横サイズを取得
-         let imgWidth:CGFloat = questionPicture.size.width
-         let imgHeight:CGFloat = questionPicture.size.height
-
-         // 画像サイズをスクリーン幅に合わせる
-         var scale:CGFloat = screenWidth / imgWidth
-        scale = scale * 0.6 //０.6倍にしてみる　大きさはこんなものかな
+//         let screenWidth:CGFloat = view.frame.size.width
+//         let screenHeight:CGFloat = view.frame.size.height
+//
+//         // 画像の縦横サイズを取得
+//         let imgWidth:CGFloat = imageView.size.width
+//         let imgHeight:CGFloat = imageView.size.height
+//
+//         // 画像サイズをスクリーン幅に合わせる
+//         var scale:CGFloat = screenWidth / imgWidth
+//        scale = scale * 0.6 //０.6倍にしてみる　大きさはこんなものかな
+//
+//         let rect:CGRect =
+//             CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
+//
+//         // ImageView frame をCGRectで作った矩形に合わせる
+//         imageView.frame = rect
+//
+//         // 画像の中心を画面の中心に設定　　位置の指定をここでやっている
+//         //imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
+//         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2 - 80)//少し上に
+//
         
-         let rect:CGRect =
-             CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
-
-         // ImageView frame をCGRectで作った矩形に合わせる
-         imageView.frame = rect;
-
-         // 画像の中心を画面の中心に設定　　位置の指定をここでやっている
-         //imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
-         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2 - 80)//少し上に
-        
-         // UIImageViewのインスタンスをビューに追加して表示する
-         self.view.addSubview(imageView)
+//         // UIImageViewのインスタンスをビューに追加して表示する
+//         self.view.addSubview(imageView)
+                 self.view.addSubview(questionImageView)
          
      }
     
