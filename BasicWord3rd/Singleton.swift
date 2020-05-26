@@ -14,7 +14,7 @@ class Singleton {
     var filename = Filename(item:"")  //問題ファイルの名前
 //    var totalNumberOfQuestions = TotalNumberOfQuestions(number:0) //問題の総数
     
-    static let sharedInstance:Singleton = Singleton() //で使う
+    static let sharedInstance:Singleton = Singleton() //
 
     func saveItem(item:String)  { //保存
         filename.item = item

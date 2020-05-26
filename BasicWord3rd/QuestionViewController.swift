@@ -11,11 +11,6 @@ import UIKit
 import AudioToolbox
 
 class QuestionViewController: UIViewController {
-
-    let singleton:Singleton = Singleton.sharedInstance
-        
-    var filename:String = ""       //問題データのCSVファイル名本体部分
-    var pictureName:UIImage = UIImage(named:"１年生物花の構造")!
     
     var questionData:QuestionData! //前画面より受け取るデータ
     var totalNumberOfQuestions:Int = 0      //問題の総数
@@ -26,7 +21,6 @@ class QuestionViewController: UIViewController {
     
     
     @IBOutlet weak var questionPicture: UIImageView!//問題用の図
-    
         
     @IBOutlet weak var progressView: UIProgressView! //解答の進行状況
         
@@ -113,8 +107,13 @@ class QuestionViewController: UIViewController {
     
     //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝
     private func initImageView(){
-         // UIImage インスタンスの生成
-         let questionPicture:UIImage = UIImage(named:"１年生物花の構造")!
+        
+        //ファイル名の取得・・・ファイル名が問題の種類を表している
+        let singleton:Singleton = Singleton.sharedInstance
+        let filename = singleton.getItem() //ファイル名を読み込む
+        
+        // UIImage インスタンスの生成
+        let questionPicture:UIImage = UIImage(named:filename)!//スタート画面で選択した問題
          
          // UIImageView 初期化
          let imageView = UIImageView(image:questionPicture)
@@ -129,7 +128,7 @@ class QuestionViewController: UIViewController {
 
          // 画像サイズをスクリーン幅に合わせる
          var scale:CGFloat = screenWidth / imgWidth
-        scale = scale * 0.8 //０.８倍にしてみる　大きさはこんなものかな
+        scale = scale * 0.7 //０.７倍にしてみる　大きさはこんなものかな
         
          let rect:CGRect =
              CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
