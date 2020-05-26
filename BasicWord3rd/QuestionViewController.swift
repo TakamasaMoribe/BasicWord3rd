@@ -128,7 +128,7 @@ class QuestionViewController: UIViewController {
 
          // 画像サイズをスクリーン幅に合わせる
          var scale:CGFloat = screenWidth / imgWidth
-        scale = scale * 0.7 //０.７倍にしてみる　大きさはこんなものかな
+        scale = scale * 0.6 //０.6倍にしてみる　大きさはこんなものかな
         
          let rect:CGRect =
              CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
