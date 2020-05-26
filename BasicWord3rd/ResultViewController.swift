@@ -24,8 +24,10 @@ class ResultViewController: UIViewController {
         let correctCount = QuestionDataManager.sharedInstance.correctCount
         //正解率の計算
         let correctPercent:Float = (Float(correctCount)/Float(totalNumberOfQuestions)) * 100
-        //小数第一位まで計算して表示
-        correctPercentLabel.text = String(format: "%.1f", correctPercent) + "%"
+//        //小数第一位まで計算して表示
+//        correctPercentLabel.text = String(format: "%.1f", correctPercent) + "%"
+        //計算して、整数値で表示
+        correctPercentLabel.text = String(format: "%.0f", correctPercent) + "%"
         //表示後　正解数(correctCount)をクリアしておく
         QuestionDataManager.sharedInstance.correctCount = 0
         //成績履歴の表示　とりあえず履歴の個数を２０にしてみる
@@ -77,9 +79,9 @@ class ResultViewController: UIViewController {
         //正解率の取得
         var correctRate:String = "" //正解率
         correctRate = String(correctPercentLabel.text!)
-        if correctRate == "100.0%" {
-            correctRate = "100%" //2文字短縮
-        }
+//        if correctRate == "100.0%" {//整数値にしたので不要になった？
+//            correctRate = "100%" //2文字短縮
+//        }
         
         //１回分の履歴文字列をつくり、改行を追加する
         nowResult = timeData + " " + filename + " " + correctRate + "\n" //改行

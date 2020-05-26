@@ -84,7 +84,7 @@ class StartViewController: UIViewController {
         let selectedVarietyIndex = varietySegment.selectedSegmentIndex
         //（種類名）
         let text3 = varietySegment.titleForSegment(at: selectedVarietyIndex)
-        //ファイル名の生成　学年名＋単元名
+        //ファイル名の生成　学年名＋単元名＋種類名
         filename = text1! + text2! + text3!
         singleton.saveItem(item: filename) //ファイル名を　シングルトンへ保存　読み込みで使用
             

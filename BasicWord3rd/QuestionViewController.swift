@@ -15,7 +15,7 @@ class QuestionViewController: UIViewController {
     let singleton:Singleton = Singleton.sharedInstance
         
     var filename:String = ""       //問題データのCSVファイル名本体部分
-    var pictureName:UIImage = UIImage(named:"顕微鏡")!
+    var pictureName:UIImage = UIImage(named:"１年生物花の構造")!
     
     var questionData:QuestionData! //前画面より受け取るデータ
     var totalNumberOfQuestions:Int = 0      //問題の総数
@@ -114,7 +114,7 @@ class QuestionViewController: UIViewController {
     //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝
     private func initImageView(){
          // UIImage インスタンスの生成
-         let questionPicture:UIImage = UIImage(named:"花の構造")!
+         let questionPicture:UIImage = UIImage(named:"１年生物花の構造")!
          
          // UIImageView 初期化
          let imageView = UIImageView(image:questionPicture)
