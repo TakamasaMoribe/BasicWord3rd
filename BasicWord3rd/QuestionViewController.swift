@@ -114,10 +114,10 @@ class QuestionViewController: UIViewController {
         
         // UIImage インスタンスの生成
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)//値は初期値
-        let imageView = UIImageView(frame:rect)   //長方形の画像
-        imageView.image = UIImage(named:filename)!//スタート画面で選択した問題の画像
-
-        questionImageView.image = imageView.image //ストーリーボード上に表示する画像
+        let imageView = UIImageView(frame:rect)   //長方形画像のインスタンス作成
+        imageView.image = UIImage(named:filename)!//問題図の画像を指定する
+        //ストーリーボード上のUIImageViewに表示する画像を指定する
+        questionImageView.image = imageView.image 
         self.view.addSubview(questionImageView)  //問題図をビューに追加して表示する
          
      }
