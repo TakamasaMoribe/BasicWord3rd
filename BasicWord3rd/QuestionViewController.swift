@@ -53,8 +53,8 @@ class QuestionViewController: UIViewController {
         //テキストビューの装飾
         let view = questionTextView! //UIView()
         view.layer.borderColor = UIColor.black.cgColor// 枠線の色
-        view.layer.borderWidth = 2// 枠線の太さ
-        view.layer.cornerRadius = 5// 面取り
+        view.layer.borderWidth = 1// 枠線の太さ
+        view.layer.cornerRadius = 3// 面取り
         
         // ボタンの装飾
             designButton(buttonObj: button1!) //選択肢１ボタンの装飾
@@ -105,49 +105,26 @@ class QuestionViewController: UIViewController {
     // end of override func viewDidLoad() ------------------------------------------------
     
     
-    //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝
+    //imageViewに問題図を表示する＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     private func initImageView(){
         
         //ファイル名の取得・・・ファイル名が問題の種類を表している
         let singleton:Singleton = Singleton.sharedInstance
-        let filename = singleton.getItem() //ファイル名を読み込む        
+        let filename = singleton.getItem() //ファイル名を読み込む
+        
         // UIImage インスタンスの生成
         let rect = CGRect(x: 0, y: 0, width: 0, height: 0)//値は初期値
         let imageView = UIImageView(frame:rect)   //長方形の画像
         imageView.image = UIImage(named:filename)!//スタート画面で選択した問題の画像
-         // UIImageView 初期化
-//         let imageView = UIImageView(image:imageView)
-        questionImageView.image = imageView.image//?????????
-         // スクリーンの縦横サイズを取得
-//         let screenWidth:CGFloat = view.frame.size.width
-//         let screenHeight:CGFloat = view.frame.size.height
-//
-//         // 画像の縦横サイズを取得
-//         let imgWidth:CGFloat = imageView.size.width
-//         let imgHeight:CGFloat = imageView.size.height
-//
-//         // 画像サイズをスクリーン幅に合わせる
-//         var scale:CGFloat = screenWidth / imgWidth
-//        scale = scale * 0.6 //０.6倍にしてみる　大きさはこんなものかな
-//
-//         let rect:CGRect =
-//             CGRect(x:0, y:0, width:imgWidth*scale, height:imgHeight*scale)
-//
-//         // ImageView frame をCGRectで作った矩形に合わせる
-//         imageView.frame = rect
-//
-//         // 画像の中心を画面の中心に設定　　位置の指定をここでやっている
-//         //imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
-//         imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2 - 80)//少し上に
-//
-        
-//         // UIImageViewのインスタンスをビューに追加して表示する
-//         self.view.addSubview(imageView)
-                 self.view.addSubview(questionImageView)
+
+        questionImageView.image = imageView.image //ストーリーボード上に表示する画像
+        self.view.addSubview(questionImageView)  //問題図をビューに追加して表示する
          
      }
+   // end of private func initImageView() ------------------------------------------------
     
-//ボタンの装飾
+    
+//ボタンの装飾　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     func designButton(buttonObj:UIButton)  {
         let button:UIButton = buttonObj //buttonに引数buttonObjを設定する
         let rgba = UIColor(red: 50/255, green: 255/255, blue: 0/255, alpha: 0.3) // ボタン背景色設定
@@ -157,7 +134,8 @@ class QuestionViewController: UIViewController {
         button.layer.cornerRadius = 2.0                                   // 角丸のサイズ
         button.setTitleColor(UIColor.black, for: UIControl.State.normal)  // タイトルの色
     }
-    
+   // end of func designButton(buttonObj:UIButton)  ------------------------------------------------
+
     
     //選択肢１を選んだ時
      @IBAction func tapAnswer1Button(_ sender: Any) {
