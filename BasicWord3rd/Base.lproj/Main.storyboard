@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-PH-0ob">
-                                <rect key="frame" x="38.5" y="25" width="298" height="638.5"/>
+                                <rect key="frame" x="38.5" y="14.5" width="298" height="638.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabelTop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlF-k0-wvf">
                                         <rect key="frame" x="84.5" y="0.0" width="129" height="20.5"/>
@@ -125,8 +125,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerX" secondItem="VOF-wo-PeT" secondAttribute="centerX" id="iI2-TG-XdC"/>
-                            <constraint firstItem="ciH-PH-0ob" firstAttribute="top" secondItem="Mfb-lG-JeU" secondAttribute="top" constant="25" id="l8Z-kj-mUV"/>
+                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerX" secondItem="VOF-wo-PeT" secondAttribute="centerX" id="ady-Wv-Dcf"/>
+                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerY" secondItem="VOF-wo-PeT" secondAttribute="centerY" id="xZ2-Cj-pe2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mfb-lG-JeU"/>
                     </view>
