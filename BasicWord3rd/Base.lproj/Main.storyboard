@@ -134,13 +134,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yM-BK-CAI">
-                                <rect key="frame" x="50" y="30" width="125" height="29"/>
+                                <rect key="frame" x="50" y="30" width="112" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-dV-aLn">
-                                <rect key="frame" x="60" y="60" width="255" height="2"/>
+                                <rect key="frame" x="60" y="60" width="242" height="2"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJP-r6-jcx">
                                 <rect key="frame" x="30" y="591" width="41" height="36"/>
@@ -151,13 +151,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="WGZ-vW-cOl">
-                                <rect key="frame" x="125" y="509" width="125" height="128"/>
+                                <rect key="frame" x="125" y="509" width="112" height="128"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="dln-OU-pPS">
-                                <rect key="frame" x="125" y="509" width="125" height="128"/>
+                                <rect key="frame" x="125" y="509" width="112" height="128"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sA8-Ka-HAg">
-                                <rect key="frame" x="20" y="500" width="335" height="87"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sA8-Ka-HAg">
+                                <rect key="frame" x="20" y="500" width="322" height="87"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LfF-gs-JFd">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="87"/>
@@ -187,7 +187,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sat-UE-pir">
-                                        <rect key="frame" x="175" y="0.0" width="160" height="87"/>
+                                        <rect key="frame" x="162" y="0.0" width="160" height="87"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoS-su-juK">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="41"/>
@@ -217,13 +217,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正解" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-uM-1ij">
-                                <rect key="frame" x="30" y="463" width="245" height="24"/>
+                                <rect key="frame" x="30" y="463" width="232" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Aの名前は？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="93S-ae-hPD">
-                                <rect key="frame" x="30" y="67" width="315" height="36"/>
+                                <rect key="frame" x="30" y="67" width="302" height="36"/>
                                 <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="2ne-dD-fXC"/>
@@ -233,10 +233,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-U2-Wge">
-                                <rect key="frame" x="30" y="113" width="315" height="324"/>
+                                <rect key="frame" x="30" y="113" width="302" height="324"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-54-Lhm">
-                                <rect key="frame" x="309" y="457" width="50" height="36"/>
+                                <rect key="frame" x="296" y="457" width="50" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="次へ"/>
                                 <connections>
