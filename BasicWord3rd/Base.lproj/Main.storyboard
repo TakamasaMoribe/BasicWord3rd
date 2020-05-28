@@ -16,34 +16,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-PH-0ob">
-                                <rect key="frame" x="38.5" y="14.5" width="298" height="638.5"/>
+                                <rect key="frame" x="38.5" y="14.5" width="298" height="638"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabelTop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlF-k0-wvf">
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="DummyLabelTop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlF-k0-wvf">
                                         <rect key="frame" x="84.5" y="0.0" width="129" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重要語句ドリル 図版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmC-nn-muu">
-                                        <rect key="frame" x="0.0" y="35.5" width="298" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="298" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabel2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeb-pC-LqG">
-                                        <rect key="frame" x="94" y="89" width="110.5" height="20.5"/>
+                                        <rect key="frame" x="94" y="88.5" width="110.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoI-28-DFE">
-                                        <rect key="frame" x="124.5" y="124.5" width="49" height="29"/>
+                                        <rect key="frame" x="124.5" y="124" width="49" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KGL-p2-pj6">
-                                        <rect key="frame" x="80.5" y="168.5" width="137" height="32"/>
+                                        <rect key="frame" x="80.5" y="168" width="137" height="32"/>
                                         <segments>
                                             <segment title="１年"/>
                                             <segment title="２年"/>
@@ -51,19 +51,19 @@
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabel3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8q-pl-BbA">
-                                        <rect key="frame" x="93.5" y="214.5" width="111" height="20.5"/>
+                                        <rect key="frame" x="93.5" y="214" width="111" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分野" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2u-Xo-MgT">
-                                        <rect key="frame" x="124.5" y="250" width="49" height="29"/>
+                                        <rect key="frame" x="124.5" y="249.5" width="49" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="epq-4L-8LQ">
-                                        <rect key="frame" x="57.5" y="294" width="183" height="32"/>
+                                        <rect key="frame" x="57.5" y="293.5" width="183" height="32"/>
                                         <segments>
                                             <segment title="生物"/>
                                             <segment title="地学"/>
@@ -72,19 +72,19 @@
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabel4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDO-r1-Ggz">
-                                        <rect key="frame" x="93.5" y="340" width="111" height="20.5"/>
+                                        <rect key="frame" x="93.5" y="339.5" width="111" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-aM-RFe">
-                                        <rect key="frame" x="124.5" y="375.5" width="49" height="29"/>
+                                        <rect key="frame" x="124.5" y="375" width="49" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-qY-nfR">
-                                        <rect key="frame" x="3.5" y="419.5" width="291" height="32"/>
+                                        <rect key="frame" x="3.5" y="419" width="291" height="32"/>
                                         <segments>
                                             <segment title="顕微鏡"/>
                                             <segment title="花の構造"/>
@@ -93,13 +93,13 @@
                                         </segments>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabel5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKx-JS-IkE">
-                                        <rect key="frame" x="94" y="465.5" width="110.5" height="20.5"/>
+                                        <rect key="frame" x="94" y="465" width="110.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-HY-lvG">
-                                        <rect key="frame" x="101.5" y="501" width="95" height="51"/>
+                                        <rect key="frame" x="101.5" y="500.5" width="95" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="START"/>
                                         <connections>
@@ -107,7 +107,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k74-GQ-KpR">
-                                        <rect key="frame" x="77.5" y="567" width="143" height="36"/>
+                                        <rect key="frame" x="77.5" y="566.5" width="143" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="中断からの再開"/>
                                         <connections>
@@ -115,7 +115,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyLabelBottom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8D-Uo-xAk">
-                                        <rect key="frame" x="71" y="618" width="156.5" height="20.5"/>
+                                        <rect key="frame" x="71" y="617.5" width="156.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -125,8 +125,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerX" secondItem="VOF-wo-PeT" secondAttribute="centerX" id="ady-Wv-Dcf"/>
-                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerY" secondItem="VOF-wo-PeT" secondAttribute="centerY" id="xZ2-Cj-pe2"/>
+                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerY" secondItem="VOF-wo-PeT" secondAttribute="centerY" id="ILF-M8-AgJ"/>
+                            <constraint firstItem="ciH-PH-0ob" firstAttribute="top" secondItem="Mfb-lG-JeU" secondAttribute="top" constant="14.5" id="RpX-gg-hmD"/>
+                            <constraint firstItem="ciH-PH-0ob" firstAttribute="centerX" secondItem="VOF-wo-PeT" secondAttribute="centerX" id="v2Q-mo-3f4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mfb-lG-JeU"/>
                     </view>
