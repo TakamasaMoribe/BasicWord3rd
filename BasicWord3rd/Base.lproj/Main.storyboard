@@ -159,11 +159,8 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-dV-aLn">
                                 <rect key="frame" x="60" y="60" width="255" height="2"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJP-r6-jcx">
-                                <rect key="frame" x="30" y="591" width="41" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="xUj-lJ-zyt"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJP-r6-jcx">
+                                <rect key="frame" x="30" y="596" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="中断"/>
                                 <connections>
@@ -284,6 +281,7 @@
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="HJP-r6-jcx" secondAttribute="bottom" constant="15" id="W8o-dl-udz"/>
                             <constraint firstItem="3aS-54-Lhm" firstAttribute="top" secondItem="zwT-U2-Wge" secondAttribute="bottom" constant="20" id="WAq-if-LPG"/>
                             <constraint firstItem="6yM-BK-CAI" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="30" id="Wow-za-cB0"/>
+                            <constraint firstItem="WGZ-vW-cOl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HJP-r6-jcx" secondAttribute="trailing" constant="8" symbolic="YES" id="Xxb-fw-S08"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="WGZ-vW-cOl" secondAttribute="bottom" constant="10" id="eaW-0r-okD"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="3aS-54-Lhm" secondAttribute="trailing" constant="16" id="f4w-RL-YfW"/>
                             <constraint firstItem="3aS-54-Lhm" firstAttribute="leading" secondItem="7hE-uM-1ij" secondAttribute="trailing" constant="34" id="fXY-Et-c5V"/>
@@ -338,7 +336,7 @@
                                     <segue destination="f9z-62-HFN" kind="unwind" unwindAction="goToTitle:" id="d8e-2Y-LNQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="5" maximumZoomScale="5" editable="NO" text="成績履歴の表示  　　　                         （日付時刻　問題名　正解率）" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vm-fR-AV0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="5" maximumZoomScale="5" editable="NO" text="成績履歴の表示  　　　                         （日付時刻　問題名　正解率）" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vm-fR-AV0">
                                 <rect key="frame" x="15" y="237" width="345" height="270"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -378,18 +376,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7Vm-fR-AV0" firstAttribute="leading" secondItem="YOq-g1-iVp" secondAttribute="leading" constant="15" id="1Oc-5F-CGS"/>
                             <constraint firstItem="0YR-op-6uz" firstAttribute="centerX" secondItem="pYU-lf-6uM" secondAttribute="centerX" id="2pO-9w-ssS"/>
-                            <constraint firstItem="7Vm-fR-AV0" firstAttribute="top" secondItem="0YR-op-6uz" secondAttribute="bottom" constant="19" id="Fgi-eR-i2y"/>
+                            <constraint firstItem="7Vm-fR-AV0" firstAttribute="centerX" secondItem="pYU-lf-6uM" secondAttribute="centerX" id="7RV-SC-bLd"/>
                             <constraint firstItem="YOq-g1-iVp" firstAttribute="bottom" secondItem="lND-AE-40A" secondAttribute="bottom" constant="30" id="IT1-Mx-jyF"/>
                             <constraint firstItem="YOq-g1-iVp" firstAttribute="bottom" secondItem="MLe-uJ-R0M" secondAttribute="bottom" constant="75" id="JuT-sz-q6w"/>
                             <constraint firstItem="MLe-uJ-R0M" firstAttribute="leading" secondItem="YOq-g1-iVp" secondAttribute="leading" constant="100" id="ML6-by-plN"/>
+                            <constraint firstItem="MLe-uJ-R0M" firstAttribute="top" secondItem="7Vm-fR-AV0" secondAttribute="bottom" constant="44" id="Tpf-ys-Ye1"/>
                             <constraint firstItem="YOq-g1-iVp" firstAttribute="trailing" secondItem="MLe-uJ-R0M" secondAttribute="trailing" constant="100" id="WA1-NU-FM2"/>
                             <constraint firstItem="YOq-g1-iVp" firstAttribute="trailing" secondItem="lND-AE-40A" secondAttribute="trailing" constant="280" id="ZXl-tK-dKY"/>
-                            <constraint firstItem="YOq-g1-iVp" firstAttribute="bottom" secondItem="7Vm-fR-AV0" secondAttribute="bottom" constant="160" id="b2t-34-F43"/>
                             <constraint firstItem="0YR-op-6uz" firstAttribute="top" secondItem="YOq-g1-iVp" secondAttribute="top" constant="54" id="bkg-bF-Fb8"/>
-                            <constraint firstItem="YOq-g1-iVp" firstAttribute="trailing" secondItem="7Vm-fR-AV0" secondAttribute="trailing" constant="15" id="f30-dT-jbz"/>
+                            <constraint firstItem="7Vm-fR-AV0" firstAttribute="top" secondItem="YOq-g1-iVp" secondAttribute="top" constant="237" id="cDD-mT-XPB"/>
+                            <constraint firstItem="YOq-g1-iVp" firstAttribute="trailing" secondItem="7Vm-fR-AV0" secondAttribute="trailing" constant="15" id="jKp-O2-qEZ"/>
                             <constraint firstItem="lND-AE-40A" firstAttribute="leading" secondItem="YOq-g1-iVp" secondAttribute="leading" constant="30" id="piP-eu-W6T"/>
+                            <constraint firstItem="7Vm-fR-AV0" firstAttribute="leading" secondItem="YOq-g1-iVp" secondAttribute="leading" constant="15" id="waG-0b-U5P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YOq-g1-iVp"/>
                     </view>
