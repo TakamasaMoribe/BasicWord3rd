@@ -249,7 +249,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-U2-Wge">
-                                <rect key="frame" x="30" y="113" width="315" height="324"/>
+                                <rect key="frame" x="30" y="113" width="320" height="320"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-54-Lhm">
                                 <rect key="frame" x="309" y="457" width="50" height="36"/>
@@ -275,11 +275,11 @@
                             <constraint firstItem="7hE-uM-1ij" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="JDZ-hI-2l9"/>
                             <constraint firstAttribute="trailing" secondItem="4ae-dV-aLn" secondAttribute="trailing" constant="60" id="JuD-Kx-Iwi"/>
                             <constraint firstItem="zwT-U2-Wge" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="Kof-nA-SRo"/>
-                            <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="zwT-U2-Wge" secondAttribute="trailing" constant="30" id="Ndm-UE-bIO"/>
+                            <constraint firstItem="xH5-9H-dKj" firstAttribute="trailing" secondItem="zwT-U2-Wge" secondAttribute="trailing" constant="25" id="Ndm-UE-bIO"/>
                             <constraint firstItem="93S-ae-hPD" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="SkA-0t-RKl"/>
                             <constraint firstItem="HJP-r6-jcx" firstAttribute="leading" secondItem="xH5-9H-dKj" secondAttribute="leading" constant="30" id="UjL-5p-CVc"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="HJP-r6-jcx" secondAttribute="bottom" constant="15" id="W8o-dl-udz"/>
-                            <constraint firstItem="3aS-54-Lhm" firstAttribute="top" secondItem="zwT-U2-Wge" secondAttribute="bottom" constant="20" id="WAq-if-LPG"/>
+                            <constraint firstItem="3aS-54-Lhm" firstAttribute="top" secondItem="zwT-U2-Wge" secondAttribute="bottom" constant="24" id="WAq-if-LPG"/>
                             <constraint firstItem="6yM-BK-CAI" firstAttribute="top" secondItem="xH5-9H-dKj" secondAttribute="top" constant="30" id="Wow-za-cB0"/>
                             <constraint firstItem="WGZ-vW-cOl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HJP-r6-jcx" secondAttribute="trailing" constant="8" symbolic="YES" id="Xxb-fw-S08"/>
                             <constraint firstItem="xH5-9H-dKj" firstAttribute="bottom" secondItem="WGZ-vW-cOl" secondAttribute="bottom" constant="10" id="eaW-0r-okD"/>
