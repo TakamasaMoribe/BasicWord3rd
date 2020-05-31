@@ -13,7 +13,7 @@
 		7F5A06EE247BE7370056A564 /* １年生物花の構造.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A06ED247BE7370056A564 /* １年生物花の構造.csv */; };
 		7F5AF5F3247A93B300A06879 /* １年生物顕微鏡.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F5AF5F2247A93B300A06879 /* １年生物顕微鏡.csv */; };
 		7F5DFA07247FE85E00F1A028 /* １年生物植物分類.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7F5DFA06247FE85E00F1A028 /* １年生物植物分類.csv */; };
-		7F5EAD3724833E9F00F2565A /* １年生物植物分類.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5EAD3624833E9F00F2565A /* １年生物植物分類.png */; };
+		7F5EAD39248346AB00F2565A /* １年生物植物分類.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5EAD38248346AB00F2565A /* １年生物植物分類.png */; };
 		7FB6450F247C94D400957EB0 /* １年生物花の構造.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB6450E247C94D400957EB0 /* １年生物花の構造.png */; };
 		7FB64511247C9D1A00957EB0 /* １年生物顕微鏡.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB64510247C9D1A00957EB0 /* １年生物顕微鏡.png */; };
 		7FE84D432476630E00B2C798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE84D422476630E00B2C798 /* AppDelegate.swift */; };
@@ -40,7 +40,7 @@
 		7F5A06ED247BE7370056A564 /* １年生物花の構造.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年生物花の構造.csv"; sourceTree = "<group>"; };
 		7F5AF5F2247A93B300A06879 /* １年生物顕微鏡.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年生物顕微鏡.csv"; sourceTree = "<group>"; };
 		7F5DFA06247FE85E00F1A028 /* １年生物植物分類.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "１年生物植物分類.csv"; sourceTree = "<group>"; };
-		7F5EAD3624833E9F00F2565A /* １年生物植物分類.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "１年生物植物分類.png"; sourceTree = "<group>"; };
+		7F5EAD38248346AB00F2565A /* １年生物植物分類.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "１年生物植物分類.png"; sourceTree = "<group>"; };
 		7FB6450E247C94D400957EB0 /* １年生物花の構造.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "１年生物花の構造.png"; sourceTree = "<group>"; };
 		7FB64510247C9D1A00957EB0 /* １年生物顕微鏡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "１年生物顕微鏡.png"; sourceTree = "<group>"; };
 		7FE84D3F2476630E00B2C798 /* BasicWord3rd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicWord3rd.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +101,7 @@
 				7FE84D5C247665F200B2C798 /* ResultViewController.swift */,
 				7FE84D5E2476662A00B2C798 /* Singleton.swift */,
 				7FE84D4B2476630F00B2C798 /* Assets.xcassets */,
-				7F5EAD3624833E9F00F2565A /* １年生物植物分類.png */,
+				7F5EAD38248346AB00F2565A /* １年生物植物分類.png */,
 				7FB64510247C9D1A00957EB0 /* １年生物顕微鏡.png */,
 				7FB6450E247C94D400957EB0 /* １年生物花の構造.png */,
 				7F3BAAD02477F2EC002BB4A2 /* correct@2x.png */,
@@ -179,7 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5EAD3724833E9F00F2565A /* １年生物植物分類.png in Resources */,
+				7F5EAD39248346AB00F2565A /* １年生物植物分類.png in Resources */,
 				7F5DFA07247FE85E00F1A028 /* １年生物植物分類.csv in Resources */,
 				7F5AF5F3247A93B300A06879 /* １年生物顕微鏡.csv in Resources */,
 				7FE84D4F2476630F00B2C798 /* LaunchScreen.storyboard in Resources */,
